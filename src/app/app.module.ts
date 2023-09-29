@@ -12,6 +12,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CardLabelComponent } from './components/card/card-label/card-label.component';
 import { CardPricingComponent } from './components/card/card-pricing/card-pricing.component';
 import { SocialMediaComponent } from './components/footer/social-media/social-media.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SocialMediaComponent } from './components/footer/social-media/social-me
     CarouselComponent,
     CardLabelComponent,
     CardPricingComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

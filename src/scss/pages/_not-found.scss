@@ -1,0 +1,14 @@
+.not-found-container{
+    background-image: url('../../assets/Banner_NotFound.jpg');
+    background-position: center; background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.not-found-text{
+    top: 30%; 
+    left: 20%;
+    
+    @media (max-width:992px) {
+        right: 20%;
+    }
+}
