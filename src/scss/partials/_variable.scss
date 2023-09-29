@@ -1,0 +1,16 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/variables-dark';
+
+$body-bg: #020024;
+$body-color: $white;
+$link-color: $black;
+$link-decoration: none;
+
+$primary: #0082C9;
+
+$custom-colors: (
+  "dark-blue": #020024
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

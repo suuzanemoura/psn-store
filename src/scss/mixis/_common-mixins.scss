@@ -1,0 +1,17 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/variables-dark';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+
+@mixin container($color, $padding, $width, $position, $display, $flex-direction, $justify-content, $align-items, $gap){
+    background-color: $color;
+    padding: $padding;
+    width: $width;
+    position: $position;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
