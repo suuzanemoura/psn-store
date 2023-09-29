@@ -1,0 +1,10 @@
+.label{
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+}
+
+.label-none{
+    @extend .label;
+    display: none;
+}
