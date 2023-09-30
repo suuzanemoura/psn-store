@@ -1,15 +1,10 @@
 footer{
-    @include container($white, 1rem, 100%, block, flex, column, center, center, 0);
+    @include container($white, 1rem 2.25rem, 100%);
 
     color: $black;
     font-size: x-small;
-    text-align: center;
-    
 
     @media (min-width: 992px){
-        flex-direction: row;
-        text-align: left;
-        gap: 2rem;
         font-size: smaller;
     }
 }
