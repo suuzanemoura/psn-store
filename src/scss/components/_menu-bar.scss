@@ -5,3 +5,7 @@
 .nav-link:not([href]):not([class]){
     color: $link-color !important;
 }
+
+.bi-search:hover{
+    color: orange;
+}
