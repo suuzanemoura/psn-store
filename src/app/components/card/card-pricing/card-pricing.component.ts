@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-pricing',
-  templateUrl: './card-pricing.component.html',
-  styleUrls: ['./card-pricing.component.scss']
+  templateUrl: './card-pricing.component.html'
 })
 export class CardPricingComponent {
-
+  @Input() cardName:string = '';
+  @Input() cardPlataform:string = '';
+  @Input() cardPrice:string = '';
 }

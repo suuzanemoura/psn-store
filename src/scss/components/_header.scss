@@ -1,24 +1,14 @@
 header{
 
-    @include container($white, 1rem, 100%, sticky, flex, column, space-around, center, 1rem);
-    top: 0;
-    z-index: 100;
+    @include container($white, .5rem, 100%);
+
+    @media (min-width: 992px){
+        padding: .5rem 2.25rem;
+    }
 
     img{
         width: 8.75rem;
         height: auto;
         object-fit: contain;
-    }
-
-    @media (min-width: 992px){
-        flex-direction: row;
-    }
-    
-    a:hover{
-        color: $primary;
-    }
-
-    a:not([href]):not([class]){
-        color: $link-color !important;
     }
 }

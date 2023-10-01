@@ -1,0 +1,7 @@
+.nav-link:hover{
+    color: $primary !important;
+}
+
+.nav-link:not([href]):not([class]){
+    color: $link-color !important;
+}
