@@ -1,7 +1,21 @@
+.card{
+    img{
+        transition: transform ease .8s;
+    }
+    img:hover{
+        width: 100%;
+        transform: scale(1.1);
+    }
+}
+
 .label{
     position: absolute;
-    bottom: 25%;
+    bottom: 35%;
     right: 0;
+
+    @media (min-width: 1024px){
+        bottom: 25%;
+    }
 }
 
 .label-none{
