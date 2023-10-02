@@ -1,0 +1,10 @@
+.text-search{
+    text-decoration: underline 0.2rem solid $orange;
+    text-underline-offset: .5rem;
+}
+
+.not-found-games-container{
+    background-image: url('../../assets/Banner_NotFoundGames.png');
+    background-position: center; background-repeat: no-repeat;
+    background-size: cover;
+}

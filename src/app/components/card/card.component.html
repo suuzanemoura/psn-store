@@ -1,8 +1,8 @@
 <div class="card position-relative overflow-hidden rounded">
-    <a href="{{cardUrl}}" target="_blank">
-        <img src="{{cardPhotoCover}}" class="w-100 object-fit-contain rounded" alt="Imagem do jogo {{cardName}}">
+    <a href="{{game.url}}" target="_blank">
+        <img src="{{game.photoCover}}" class="w-100 object-fit-contain rounded" alt="Imagem do jogo {{game.name}}">
     </a>
-    <app-card-label cardLabel="{{cardLabel}}" class="position-absolute" [ngClass]="cardLabel == '' ? 'label-none' : 'label'"></app-card-label>
-    <app-card-pricing cardPlataform="{{cardPlataform}}" cardPrice="{{cardPrice}}" cardName="{{cardName}}" class="position-absolute bottom-0 start-0 w-100"></app-card-pricing>
+    <app-card-label cardLabel="{{game.label}}" class="position-absolute" [ngClass]="game.label == '' ? 'label-none' : 'label'"></app-card-label>
+    <app-card-pricing cardPlataforms="{{game.plataforms}}" cardPrice="{{game.price}}" cardName="{{game.name}}" class="position-absolute bottom-0 start-0 w-100"></app-card-pricing>
 </div>
 

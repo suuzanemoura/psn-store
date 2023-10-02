@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { CardLabelComponent } from './components/card/card-label/card-label.comp
 import { CardPricingComponent } from './components/card/card-pricing/card-pricing.component';
 import { SocialMediaComponent } from './components/footer/social-media/social-media.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +28,12 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     CardLabelComponent,
     CardPricingComponent,
     SocialMediaComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

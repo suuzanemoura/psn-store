@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardPricingComponent {
   @Input() cardName:string = '';
-  @Input() cardPlataform:string = '';
+  @Input() cardPlataforms:string = '';
   @Input() cardPrice:string = '';
 }

@@ -1,14 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { game } from 'src/app/models/game';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html'
 })
 export class CardComponent {
-  @Input() cardLabel:string = '';
-  @Input() cardName:string = '';
-  @Input() cardPhotoCover:string = '';
-  @Input() cardPlataform:string = '';
-  @Input() cardPrice:string = '';
-  @Input() cardUrl:string = '';
+  @Input() game:game = { id: '', name: '', label: '', plataforms: '', photoCover: '', price: '', url: '' };
 }
