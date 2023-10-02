@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, inject, OnInit, AfterContentChecked } from '@angular/core';
 import { game } from 'src/app/models/game';
 import { GameStoreService } from 'src/app/game-store.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   selector: 'app-search',
   templateUrl: './search.component.html'
 })
-export class SearchComponent implements OnInit, AfterViewChecked {
+export class SearchComponent implements OnInit, AfterContentChecked {
 
   filteredGameList:game[] = []
   private search:string | null = ''
@@ -25,7 +25,7 @@ export class SearchComponent implements OnInit, AfterViewChecked {
     })
   }
 
-  ngAfterViewChecked(): void {
+  ngAfterContentChecked(): void {
 
     this.setValuesToComponent(this.newSearch)
 
