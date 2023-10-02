@@ -1,4 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-2 p-sm-3">
+  <swal
+        #errorSwal
+        title="Oops, campo vazio!"
+        text="Digite sua busca e tente novamente!"
+        icon="error"
+        [showConfirmButton]="true"
+        [focusConfirm]="true"
+        confirmButtonText="OK"
+        confirmButtonColor="#0082C9">
+    </swal>
+    
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['']"><img src="../../../assets/ps-logo.png" alt="Logo da PlayStation Store"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
