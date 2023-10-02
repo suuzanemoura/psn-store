@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { data } from 'src/app/data/data';
-import { card } from 'src/app/models/card';
+import { Component, inject } from '@angular/core';
+import { game } from 'src/app/models/game';
+import { GameStoreService } from 'src/app/game-store.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent{
 
-  cards:card[] = []
+  gameList:game[] = [];
+  gameStoreServive: GameStoreService = inject(GameStoreService);
 
-  ngOnInit(): void {
-    data.map((datacard) => {this.cards.push({cardId: datacard.id, cardName: datacard.name, cardPhotoCover: datacard.photoCover, cardPrice: datacard.price, cardPlaform: datacard.plataforms, cardLabel: datacard.label, cardUrl: datacard.url})})
+  constructor(){
+    this.gameList = this.gameStoreServive.getAllGames()
   }
-
 }

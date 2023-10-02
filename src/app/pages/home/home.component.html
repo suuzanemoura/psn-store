@@ -2,13 +2,8 @@
     <app-carousel></app-carousel>
     <div class="row p-5 my-5 mx-0 row-cols-lg-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center row-gap-4">
         <app-card class="col"
-            *ngFor="let card of cards"
-            cardName="{{card.cardName}}"
-            cardLabel="{{card.cardLabel}}"
-            cardPhotoCover="{{card.cardPhotoCover}}"
-            cardPlataform="{{card.cardPlaform}}"
-            cardPrice="{{card.cardPrice}}"
-            cardUrl="{{card.cardUrl}}"
+            *ngFor="let game of gameList"
+            [game]="game"
         ></app-card>
     </div>
 </main>

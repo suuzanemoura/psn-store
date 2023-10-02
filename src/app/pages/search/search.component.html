@@ -1,0 +1,21 @@
+<main class="min-vh-100 position-relative">
+
+    <div class="pt-5 px-5">
+        <a [routerLink]="['']" class="btn btn-primary ms-4 mb-3" [routerLink]="['']" role="button" style="font-size: smaller;"><i class="bi bi-arrow-left"></i> Voltar para o início</a>
+        <h2 class="pt-3 ps-4 text-uppercase fw-bold text-search mb-3">Resultado da pesquisa</h2>
+        <p *ngIf="filteredGameList.length > 1" class="ps-4"><span class="text-orange">— </span><span class="fw-bold">{{filteredGameList.length}}</span> jogos foram encontrados</p>
+        <p class="ps-4" *ngIf="filteredGameList.length === 1"><span class="text-orange">— </span><span class="fw-bold">{{filteredGameList.length}}</span> jogo foi encontrado</p>
+        <p class="ps-4" *ngIf="filteredGameList.length === 0"><span class="text-orange">— </span><span class="fw-bold">Nenhum</span> jogo foi encontrado</p>
+    </div>
+
+    <div *ngIf="filteredGameList.length === 0" class="not-found-games-container min-vh-100 w-100 object-fit-contain z-n1 position-absolute top-0 opacity-25">
+    </div>
+    
+    <div class="row pb-5 px-5 my-5 mx-0 row-cols-lg-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center row-gap-4" *ngIf="filteredGameList.length > 0">
+        <app-card class="col"
+            *ngFor="let game of filteredGameList"
+            [game]="game"
+        ></app-card>
+    </div>
+</main>
+

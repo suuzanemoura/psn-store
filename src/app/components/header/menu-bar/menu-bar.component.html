@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="['']"><img src="../../../assets/ps-logo.png" alt="Logo da PlayStation Store"></a>
+    <a class="navbar-brand" [routerLink]="['']"><img src="../../../assets/ps-logo.png" alt="Logo da PlayStation Store"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,7 +8,7 @@
     <div class=" collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link mx-4 px-2 me-lg-2 mx-lg-0 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link mx-4 px-2 me-lg-2 mx-lg-0 active" aria-current="page" [routerLink]="['']">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link mx-4 px-2 me-lg-2 mx-lg-0" type="button" href="https://store.playstation.com/pt-br/pages/latest" target="_blank">Novidades</a>
@@ -27,11 +27,20 @@
         </li>
       </ul>
 
-      <div class="ms-auto d-none d-lg-block">
-        <div class="input-group">
-          <input type="text" class="form-control bg-light text-body-tertiary" placeholder="Pesquise seu jogo...">
-          <button class="btn btn-primary border-primary text-white"><i class="bi bi-search"></i></button>
-        </div>
+      <div class="ms-auto p-4 p-lg-0">
+        <form class="input-group" #filter="ngForm" (ngSubmit)="filterResults(filter)">
+          <input
+            type="text"
+            class="form-control bg-light text-body-tertiary"
+            placeholder="Pesquise seu jogo..."
+            name="search" ngModel #search="ngModel"
+            >
+          <button
+            class="btn btn-primary border-primary text-white"
+            type="submit">
+              <i class="bi bi-search"></i>
+          </button>
+        </form>
       </div>
 
     </div>
