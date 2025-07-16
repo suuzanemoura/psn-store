@@ -2,53 +2,79 @@
 
 ## Introdução
 
-O projeto é um clone simples PlayStation Store desenvolvido com framework Angular, BootStrap e SCSS. Projeto desenvolvido durante o Santander Bootcamp 2023: FullStack Angular + Java.
+Este projeto é um clone simples da **PlayStation™ Store**, desenvolvido com Angular, Bootstrap e SCSS. A proposta foi recriar visualmente e estruturalmente a loja, com foco em layout responsivo e navegação funcional.
+
+> Projeto desenvolvido durante o **Santander Bootcamp 2023: FullStack Angular + Java**.
 
 ## Link de Acesso
 
-- Deploy no [Vercel](https://psn-store-clone-dio.vercel.app//).
+- Acesse o deploy do projeto online: [Clique aqui!](https://psn-store-clone-dio.vercel.app/)
+
+## Visual do Projeto
+
+<img src="https://github.com/user-attachments/assets/02bfc510-bfbb-4247-ad59-6e15bedb772e" alt="Captura de tela da interface inicial do clone da PlayStation Store. Mostra os cards dos jogos com nome, preço e plataforma, além de menu superior com campo de busca." width="100%" />
 
 ## Sobre o Projeto
 
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/psn-store-clone.git
+
+# Acesse a pasta do projeto
+cd psn-store-clone
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+ng serve
+
+# A aplicação será iniciada na porta 4200
+```
+
 ### Tecnologias
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![BootStrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+- HTML5
+- CSS3
+- BootStrap
+- SASS
+- JavaScript
+- TypeScript
+- Angular
+- Git
 
 ### Bibliotecas utilizadas
 
-- [SweetAlert2](https://sweetalert2.github.io/)
+- SweetAlert2 → alerta interativo ao buscar com input vazio.
 
-### Imagens
+## Funcionalidades
 
-- Todas as imagens e os direitos à elas pertencem à PlayStation™ Store Oficial e a Sony Interactive Entertainment Inc.
+- Página inicial exibe 12 jogos simulando cards reais da loja;
+- Menu de navegação com links externos à loja oficial;
+- Campo de pesquisa com alerta se estiver vazio;
+- Redirecionamento para página de resultados contendo quantidade e cards filtrados;
+- Página de erro personalizada para rotas inexistentes;
+- Redirecionamento para início por botão ou menu;
+- Cards clicáveis que levam à página oficial do jogo na PlayStation™ Store.
 
-### Funcionalidades
+ ## Destaques do Projeto
 
-- O clone da PlayStation Store conta com 12 exemplos de games, todos exibidos na index.
-- O menu de navegação tem links externos para as páginas da PlayStation™ Store Oficial.
-- É possível pesquisar por nome do jogo no input na header, com no mínimo 01 caractere.
-- Se clicar o botão de pesquisar ou apertar a tecla 'enter' dentro do input vazio, irá aparecer um alert notificando para digitar e tentar novamente.
-- Ao realizar uma busca por jogo, o usuário é direcionado a outra rota, onde será exibido quantos jogos dos 12 disponíveis contém o(s) caractere(s) digitados no input.
-- É possível voltar ao ínicio através do menu de navegação e também por um botão na página de exibição dos itens de pesquisa.
-- Na página inicial, cada jogo é representado por um card que contém seu nome, para qual plataforma está disponível para compra, seu valor e é clicável, sendo redirecionável a página do jogo na PlayStation™ Store Oficial.
-- Ao buscar uma página que não existe, será exibido uma página de "Página não encontrada" com botão de retorno ao ínicio.
-- Responsivo para web, tablet e mobile.
+- **Busca inteligente** por nome dos jogos, com validação de entrada.
+- **Navegação entre rotas** com tratamento de rotas inexistentes (404 personalizada).
+- **Design responsivo** para desktop, tablet e mobile.
+- **Cards interativos** com nome, plataforma, preço e redirecionamento à loja oficial.
+- **Alertas personalizados** com SweetAlert2.
+- Links do menu redirecionam à PlayStation™ Store oficial.
 
-### Futuras melhorias
+## Melhorias em Potencial
+- Adição de banners promocionais clicáveis.
+- Exibir o termo de busca no componente de resultado.
 
-- Banners clicáveis e redirecionáveis.
-- Mostrar o termo de busca no componente.
+## Status do projeto
 
-### Status do projeto
-
-- Concluído ⏳
+- ✅ Projeto concluído – aberto a melhorias futuras conforme disponibilidade.
 
 ## <img alt="Coração Roxo" height="15" src="https://github.com/suuzanemoura/suuzanemoura/assets/104701271/ce158244-38f2-4162-b0a4-24b1cfa66ef8"> Contato
 
